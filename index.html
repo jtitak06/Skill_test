@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+  <head>
+    <title>Los Angeles Mountains</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="SautinSoft PdfFocus" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      .hamburger_home {
+        visibility: hidden;
+        position: relative;
+      }
+      .hamburger_history {
+        visibility: hidden;
+        position: relative;
+      }
+      .mobile-header_home {
+        visibility: hidden;
+      }
+      .mobile-header_history {
+        visibility: hidden;
+      }
+      .tab:hover {
+          opacity: 0.6;
+        }
+      .mountain1 {
+        background: url('https://i.postimg.cc/CLt2SxwJ/Background3.png');
+      }
+      .mountain2 {
+        background: url('https://i.postimg.cc/fWV7T3X6/Background4.png');
+      }
+      .mountain-tab {
+        cursor: pointer;
+        height: 100%;
+        z-index: 1;
+      }
+      .mountain1-tab.active {
+        background-color: rgb(160, 167, 181);
+      }
+      .mountain1-tab.hide {
+        text-decoration: none;
+      }
+      .mountain2-tab.active {
+        background-color: rgb(160, 167, 181);
+      }
+      .mountain2-tab.hide {
+        text-decoration: none;
+      }
+      .mountain1-tab_text.active {
+        color: rgb(65, 79, 107); 
+        text-decoration: underline;
+      }
+      .mountain1-tab_text.hide {
+        color: rgb(160, 167, 181);
+      }
+      .mountain2-tab_text.active {
+        color: rgb(65, 79, 107); 
+        text-decoration: underline;
+      }
+      .mountain2-tab_text.hide {
+        color: rgb(160, 167, 181);
+      }
+      .mountain-schedule {
+        background-color: rgba(255, 255, 255, 0.7); 
+        width: 24vw; 
+        position: absolute;
+        top: 27vw;
+        left: 24vw;
+      }
+      .mountain1-schedule.hide {
+        visibility: hidden;
+      }
+      .mountain2-schedule.hide {
+        visibility: hidden;
+      }
+      @media screen and (max-width: 550px){
+        .desktop-header {
+          visibility: hidden;
+        }
+        .mobile-header_home.show {
+          visibility: visible;
+        }
+        .mobile-header_history.show {
+          visibility: visible;
+        }
+        .hamburger_home {
+          visibility: visible;
+        }
+        .hamburger_history {
+          visibility: visible;
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: auto;">
+    <section id="home" style="background: url('https://i.postimg.cc/NGd7vCQx/Background1.png'); background-size: cover; background-repeat: no-repeat; width: 100vw; height: 60vw;">
+        <header style="width: 60%; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+            <img src="https://i.postimg.cc/Vs0M2fHz/Logo.png" style="height: 2vw; width: 2vw; margin-top: 0.5vw;">
+            <nav style="font-size: 1vw;
+            letter-spacing: 1px;
+            line-height: 1.1vw;
+            color: #fefeff;
+            font-weight: 900;
+            font-style: italic;
+            font-family: 'Lato', sans-serif;
+            margin-top: 0.5vw;
+            position: relative;
+            ">
+            <ul class="desktop-header" style="width: 22vw; display: flex; justify-content: space-around; align-items: center; list-style: none;">
+              <li>  
+                <a class="tab" href="#history" style="color: #fff; font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;">01. HISTORY</a>
+              </li>
+              <li>  
+                <a class="tab" href="#team" style="color: #fff; font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;">02. TEAM</a>
+              </li>
+            </ul>
+            <div class="hamburger_home" style="display: block;">
+              <button class="hamburger-btn_home" style="display: flex; position: absolute; right: 0; top: -3vw; background: transparent; border-radius: 5px; border: 1px solid #fff; font-size: 1.5vw; color: #fff;" onclick="mobileMenuHome()">☰</button>
+            </div>
+            <ul class="mobile-header_home" style="width: 27vw; display: flex; justify-content: space-around; align-items: center; list-style: none; flex-direction: column; position: absolute; right: -11.9vw; margin: 0;">
+              <li style="padding: 0.6vw;">
+                <a class="home-tab_home tab" href="#home" style="color: #fff; font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;" onclick="mobileMenuHome()">HOME</a>
+              </li>
+              <li style="padding: 0.6vw;">  
+              <a class="history-tab_home tab" href="#history" style="color: #fff; font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;" onclick="mobileMenuHome()">HISTORY</a>
+              </li>
+              <li style="padding: 0.6vw;">
+              <a class="team-tab_home tab" href="#team" style="color: #fff; font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;" onclick="mobileMenuHome()">TEAM</a>
+              </li>
+            </ul>
+            </nav>
+        </header>
+        <div style="width: 60%; margin: auto;">
+        <h1 style="
+        letter-spacing: 1px;
+        color: #4d4d4d;
+        font-family: 'Bebas Neue', cursive;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12vw;
+        line-height: 10vw;
+        margin: 11.5vw auto;
+        ">
+        LOSANGELES
+        <span style="margin: 0; color: rgb(55, 67, 91)">MOUNTAINS</span></h1>
+        </div>
+    </section>
+    <section id="history" style="background: url('https://i.postimg.cc/tJ4cC11v/Background2.png'); background-size: cover; background-repeat: no-repeat; width: 100vw; height: 60vw; position: sticky; display: inline-block;">
+      <header style="width: 100%; background-color: #fff;">
+        <div style="width: 60%; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+        <img src="https://i.postimg.cc/Vs0M2fHz/Logo.png" style="height: 2vw; width: 2w; margin-right: 0.5vw;">
+        <h4 style="display: flex; flex-direction: column; font-size: 1.6vw; line-height: 1.3vw; font-family: 'Bebas Neue', cursive; margin: 1.3vw 0;">LOSANGELES<span style="margin: 0; color: rgb(55, 67, 91);">MOUNTAINS</span></h4>
+        </div>
+        <nav style="font-size: 1vw;
+        letter-spacing: 1px;
+        line-height: 1.1vw;
+        color: #fefeff;
+        font-weight: 900;
+        font-style: italic;
+        font-family: 'Lato', sans-serif;
+        ">
+        <ul class="desktop-header" style="width: 22vw; display: flex; justify-content: space-around;">
+            <a class="tab" href="#history" style="color: rgb(65, 79, 107); font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;">01. HISTORY</a>
+            <a class="tab" href="#team" style="color: rgb(65, 79, 107); font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;">02. TEAM</a>
+        </ul>
+        <div class="hamburger_history" style="display: block;">
+          <button class="hamburger-btn_history" style="display: flex; position: absolute; right: 0; top: -3vw; background: transparent; border-radius: 5px; border: 1px solid rgb(65, 79, 107); font-size: 1.5vw; color: rgb(65, 79, 107);" onclick="mobileMenuHistory()">☰</button>
+        </div>
+        <ul class="mobile-header_history" style="display: flex; justify-content: space-around; align-items: center; list-style: none; flex-direction: column; position: absolute; right: 17.9vw; top: 5vw; margin: 0;">
+          <li style="padding: 0.6vw;">
+            <a class="home-tab_history tab" href="#home" style="color: rgb(65, 79, 107); font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;" onclick="mobileMenuHistory()">HOME</a>
+          </li>
+          <li style="padding: 0.6vw;">  
+          <a class="history-tab_history tab" href="#history" style="color: rgb(65, 79, 107); font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;" onclick="mobileMenuHistory()">HISTORY</a>
+          </li>
+          <li style="padding: 0.6vw;">  
+          <a class="team-tab_history tab" href="#team" style="color: rgb(65, 79, 107); font-family: 'Lato', sans-serif; font-style: italic; font-weight: 900; font-size: 1.1vw;" onclick="mobileMenuHistory()">TEAM</a>
+          </li>
+        </ul>
+        </nav>
+        </div>
+    </header>
+      <div style="display: flex; flex-direction: column; width: 60%; margin: auto;">
+      <div style="width: 60%; display: flex; flex-direction: row; position: relative; align-items: center; top: -1.5vw;">
+      <h2 style="margin: auto; display: flex; align-items: flex-start; font-size: 11vw; color: rgba(105, 120, 148, 0.7); font-family: 'Oswald', sans-serif; font-weight: 700;">01.</h2>
+      <h3 style="width: 60%; margin: auto; display: flex; color: rgb(65, 79, 107); font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2.5vw; position: relative; left: -3vw; bottom: -1.25vw;">HISTORY</h3>
+      </div>
+      <p style="width: 90%; margin: auto; display: flex; position: relative; top: -3vw; font-size: 1vw; font-family: 'Lato', sans-serif; font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+      </div>
+      <div style="background-color: rgba(65, 79, 107, 0.8); position: absolute; bottom: 0;">
+      <figure style="width: 60%; margin: auto; height: 12vw; display: flex; justify-content: center; align-items: center;">
+        <button id="previous" style="background: transparent; border: none; position: relative; color: #fff; cursor: pointer;">⫷</button>
+        <div id="images" style="display: flex; justify-content: center;">
+        <img id="image1" src="https://i.postimg.cc/tTCkFKXY/Photo1.png" style="max-width: 22%; margin: 0.4vw;">
+        <img id="image2" src="https://i.postimg.cc/gk9MTBsB/Photo2.png" style="max-width: 22%; margin: 0.4vw;">
+        <img id="image3" src="https://i.postimg.cc/tTCkFKXY/Photo1.png" style="max-width: 22%; margin: 0.4vw;">
+        <img id="image4" src="https://i.postimg.cc/gk9MTBsB/Photo2.png" style="max-width: 22%; margin: 0.4vw;">
+        </div>
+        <button id="next" style="background: transparent; border: none; position: relative; color: #fff; cursor: pointer;">⫸</button>
+      </figure>
+    </div>
+    </section>
+    <section id="team" class="mountain1"; style="background-size: cover; background-repeat: no-repeat; width: 100vw; height: 60vw; position: sticky; display: inline-block;">
+      <div style="width: 100%; background-color: #fff;">
+        <div style="width: 60%; margin: auto; display: flex; flex-direction: row; align-items: center;">
+          <div style="display: flex; justify-content: center; align-items: center;">
+        <h2 style="color: rgb(160, 167, 181); font-size: 11vw; margin: 0; width: 60%; display: flex; font-family: 'Oswald', sans-serif;
+        font-weight: 700;">02.</h2>
+        <h3 style="color: rgb(65, 79, 107); position: relative; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 2.5vw; left: -0.5vw; bottom: -1.25vw;">CLIMB</h3>
+          </div>
+        <p style="font-size: 1vw; font-family: 'Lato', sans-serif; font-weight: 300;">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.</p>
+      </div>
+      </div>
+      <nav style="background-color: rgb(65, 79, 107); margin: auto; display: flex;">
+        <div style="width: 60%; margin: auto; display: flex; align-items: flex-start;">
+        <a class="mountain1-tab active mountain-tab" onclick="changeToOne()">
+          <h4 class="mountain1-tab_text active" style="margin: 1vw; font-size: 2vw; font-family: 'Oswald', sans-serif; font-weight: 700;">MOUNTAIN 1</h4>
+        </a>
+        <a class="mountain2-tab hide mountain-tab" style="text-decoration: none;" onclick="changeToTwo()">
+          <h4 class="mountain2-tab_text hide" style="margin: 1vw; font-size: 2vw; font-family: 'Oswald', sans-serif; font-weight: 700;">MOUNTAIN 2</h4>
+        </a>
+        </div>
+      </nav>
+      <div style="width: 60%; margin: auto;">
+      <div class=" mountain-schedule mountain1-schedule">
+        <h3 style="font-size: 2.5vw; color: rgb(65, 79, 107); width: 80%; margin: auto; padding-bottom: 0.6vw; padding-top: 0.6vw; font-family: 'Oswald', sans-serif; font-weight: 700;">SCHEDULE</h3>
+        <table style="width: 80%; margin: auto; position: relative; font-size: 1.1vw; line-height: 1.3vw; font-family: 'Lato', sans-serif;">
+          <tr>
+            <td>25 Nov 2016</td>
+            <td style="text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1.3vw;">28 Nov 2016</td>
+            <td style="padding-bottom: 1.3vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1.3vw;">18 Dec 2016</td>
+            <td style="padding-bottom: 1.3vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1vw;">7 Jan 2017</td>
+            <td style="padding-bottom: 1vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+        </table>
+      </div>
+      <div class="mountain-schedule mountain2-schedule hide">
+        <h3 style="font-size: 2.5vw; color: rgb(65, 79, 107); width: 80%; margin: auto; padding-bottom: 0.6vw; padding-top: 0.6vw; font-family: 'Oswald', sans-serif; font-weight: 700;">SCHEDULE</h3>
+        <table style="width: 80%; margin: auto; position: relative; font-size: 1.1vw; line-height: 1.3vw; font-family: 'Lato', sans-serif;">
+          <tr>
+            <td style="padding-bottom: 1.3vw;">17 Nov 2016</td>
+            <td style="padding-bottom: 1.3vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td>13 Dec 2016</td>
+            <td style="text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1.3vw;">28 Dec 2016</td>
+            <td style="padding-bottom: 1.3vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1vw;">9 Feb 2017</td>
+            <td style="padding-bottom: 1vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-->
+    <div style="width: 60%; margin: auto; top: -16.6vw; position: relative;">
+      <div class="mountain2-schedule hide" style="background-color: rgba(255, 255, 255, 0.7); width: 24vw; position: relative; top: 4vw; left: 1.5vw;">
+        <h3 style="font-size: 2.5vw; color: rgb(65, 79, 107); width: 80%; margin: auto; padding-bottom: 0.6vw; padding-top: 0.6vw; font-family: 'Oswald', sans-serif; font-weight: 700;">SCHEDULE</h3>
+        <table style="width: 80%; margin: auto; position: relative; font-size: 1.1vw; line-height: 1.3vw; font-family: 'Lato', sans-serif;">
+          <tr>
+            <td style="padding-bottom: 1.3vw;">17 Nov 2016</td>
+            <td style="padding-bottom: 1.3vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td>13 Dec 2016</td>
+            <td style="text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1.3vw;">28 Dec 2016</td>
+            <td style="padding-bottom: 1.3vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 1vw;">9 Feb 2017</td>
+            <td style="padding-bottom: 1vw; text-align: right;">Vestibulum viverra</td>
+          </tr>
+        </table>
+      </div>
+    </div> 
+    <!-->
+    </section>
+    <footer style="background-color: rgb(65, 79, 107);">
+      <div style="display: flex; flex-direction: row; width: 60%; margin: auto; justify-content: space-between; align-items: center;">
+      <div style="display: flex; flex-direction: row; align-items: center;">
+        <img src="https://i.postimg.cc/Vs0M2fHz/Logo.png" style="height: 2vw; width: 2vw; opacity: 0.5;
+        background-color: rgb(99, 118, 157);
+        border-radius: 100px;
+        margin-right: 0.5vw;">
+      <h4 style="display: flex; flex-direction: column; color: rgb(99, 118, 157); font-size: 1.6vw; line-height: 1.3vw; font-family: 'Bebas Neue', cursive;">LOSANGELES<span>MOUNTAINS</span></h4>
+      </div>
+      <p style="color:rgb(99, 118, 157); font-size: 1.1vw; font-family: 'Lato', sans-serif; font-style: italic; font-weight: 300;">COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
+      </div>
+    </footer>
+    <script>
+      // hamburger menu - mobile for homepage
+      const hamburgerButtonHome = document.querySelector(".hamburger-btn_home");
+      const mobileHeaderHome = document.querySelector(".mobile-header_home");
+      const homeTabHome = document.querySelector(".home-tab_home");
+      const historyTabHome = document.querySelector(".history-tab_home");
+      const teamTabHome = document.querySelector(".team-tab_home")
+
+      function mobileMenuHome() {
+        mobileHeaderHome.classList.toggle('show');
+      }
+
+      // hamburger menu -mobile for history tab
+      const hamburgerButtonHistory = document.querySelector(".hamburger-btn_history");
+      const mobileHeaderHistory = document.querySelector(".mobile-header_history");
+      const homeTabHistory = document.querySelector(".home-tab_history");
+      const historyTabHistory = document.querySelector(".history-tab_history");
+      const teamTabHistory = document.querySelector(".team-tab_history");
+
+      function mobileMenuHistory() {
+        mobileHeaderHistory.classList.toggle('show');
+      }
+
+      // carousel
+      let previousButton = document.querySelector("#previous");
+      let nextButton = document.querySelector("#next");
+      let imageContainer = document.querySelector("#images");
+      const imageOne = document.getElementById("image1");
+      const imageTwo = document.getElementById("image2");
+      const imageThree = document.getElementById("image3");
+      const imageFour = document.getElementById("image4");
+      nextButton.addEventListener("click", () => {
+      //  let imagesArray = Array.from(imageContainer.children);
+      //  imagesArray.unshift(imagesArray.pop());
+      //  console.log(imagesArray)
+      let firstChild = imageContainer.children[0];
+      let lastChild = imageContainer.children[imageContainer.children.length - 1];
+      imageContainer.removeChild(lastChild);
+      imageContainer.insertBefore(lastChild, firstChild)
+      })
+
+      previousButton.addEventListener("click", () => {
+      let firstChild = imageContainer.children[0];
+      imageContainer.removeChild(firstChild);
+      imageContainer.append(firstChild);
+      })
+      
+      // mountain 2 onclick
+      const mountainOne = document.querySelector(".mountain1");
+      const mountainOneTab = document.querySelector(".mountain1-tab");
+      const mountainTwoTab = document.querySelector(".mountain2-tab");
+      const mountainOneTabText = document.querySelector(".mountain1-tab_text");
+      const mountainTwoTabText = document.querySelector(".mountain2-tab_text");
+      const mountainOneSchedule = document.querySelector(".mountain1-schedule");
+      const mountainTwoSchedule = document.querySelector(".mountain2-schedule");
+
+
+      function changeToTwo() {
+        mountainOne.classList.add("mountain2");
+        mountainTwoTab.classList.remove("hide");
+        mountainTwoTab.classList.add("active");
+        mountainTwoTabText.classList.remove("hide");
+        mountainTwoTabText.classList.add("active");
+        mountainOneTab.classList.remove("active");
+        mountainOneTab.classList.add("hide");
+        mountainOneTabText.classList.remove("active");
+        mountainOneTabText.classList.add("hide");
+        mountainOneSchedule.classList.add("hide");
+        mountainTwoSchedule.classList.remove("hide");
+      }
+
+      // change to mountain 1 on click
+      function changeToOne() {
+        mountainOne.classList.remove("mountain2");
+        mountainOneTab.classList.remove("hide");
+        mountainOneTab.classList.add("active");
+        mountainOneTabText.classList.remove("hide");
+        mountainOneTabText.classList.add("active");
+        mountainTwoTab.classList.remove("active");
+        mountainTwoTab.classList.add("hide");
+        mountainTwoTabText.classList.remove("active");
+        mountainTwoTabText.classList.add("hide");
+        mountainTwoSchedule.classList.add("hide");
+        mountainOneSchedule.classList.remove("hide");
+      }
+
+    </script>
+  </body>
+</html>
